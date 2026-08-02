@@ -1,8 +1,27 @@
 aid: symmetrical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/symmetrical.png
 name: Symmetrical
-description: 'Symmetrical is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Financial Services. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Symmetrical.ai is a Polish-British HR and payroll fintech, founded in 2019 in
+  Warsaw with offices in London and Barcelona and backed by Partech. It provides
+  payroll and HR bureau outsourcing plus an HR platform automating wage
+  calculation, digital document management, onboarding, leave and time tracking,
+  and real-time analytics, alongside employee financial wellbeing tools such as
+  earned-wage / salary-on-demand access. Symmetrical is ISO/IEC 27001 certified.
+  The company operates an authentication-gated developer documentation portal
+  (developer.symmetrical.ai) but publishes no public OpenAPI, API reference, or
+  SDKs; this profile captures its public identity plus probed security posture.
 url: https://raw.githubusercontent.com/api-evangelist/symmetrical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Financial Services
+- Payroll
+- Human Resources
+- Fintech
+- Earned Wage Access
+- Poland
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,26 @@ maintainers:
 common:
 - type: Website
   url: https://symmetrical.ai/
+- type: DeveloperPortal
+  url: https://developer.symmetrical.ai/
+- type: Blog
+  url: https://symmetrical.ai/pl/blog
+- type: Pricing
+  url: https://symmetrical.ai/pl/cennik
+- type: SignUp
+  url: https://symmetrical.ai/pl/logowanie
+- type: TermsOfService
+  url: https://symmetrical.ai/pl/regulamin-uslug-symmetrical
+- type: PrivacyPolicy
+  url: https://symmetrical.ai/polityka-prywatnosci
+- type: DomainSecurity
+  url: security/symmetrical-domain-security.yml
+- type: Conformance
+  url: conformance/symmetrical-conformance.yml
+- type: Compliance
+  url: conformance/symmetrical-conformance.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1

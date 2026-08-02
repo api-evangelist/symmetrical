@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: symmetrical.ai marketing site footer + security messaging (ISO 27001 certification claim)
+notes: >-
+  Symmetrical.ai publishes no public OpenAPI or API reference (the developer
+  documentation portal at developer.symmetrical.ai is authentication-gated,
+  returning HTTP 401). No public evidence exists for API-level cross-cutting
+  standards (oauth2/oidc/rfc9457/pagination/idempotency). The only publicly
+  published, verifiable compliance claim is the organization's ISO/IEC 27001
+  information-security certification.
+standards:
+- id: iso27001
+  name: ISO/IEC 27001 Information Security Management
+  conforms: true
+  evidence: >-
+    Publicly stated on symmetrical.ai ("ISO 27001 certified"). Organization-level
+    security certification; not verified against a certificate registry.
+  source: https://symmetrical.ai/
+- id: oauth2
+  conforms: false
+  evidence: No public OpenAPI or auth documentation available (developer portal gated, HTTP 401).
+- id: rfc9457
+  conforms: false
+  evidence: No public API reference; error format cannot be determined.
